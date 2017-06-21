@@ -33,12 +33,23 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+gem 'annotate'
+gem 'bootstrap-sass'
+gem 'devise'
+gem 'paperclip', git: "git://github.com/thoughtbot/paperclip.git"
+gem 'simple_form'
+gem 'faker'
+gem 'font-awesome-rails'
+gem 'stamp'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
+
+  gem 'irbtools-more', require: 'irbtools/binding'
 end
 
 group :development do
