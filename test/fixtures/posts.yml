@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  content: MyText
+  author: one
+  category: one
+
+two:
+  title: MyString
+  content: MyText
+  author: two
+  category: two
+
+# == Schema Information
+#
+# Table name: posts
+#
+#  id          :integer          not null, primary key
+#  title       :string
+#  content     :text
+#  author_id   :integer
+#  category_id :integer
+#  created_at  :datetime         not null
+#  updated_at  :datetime         not null
+#
+# Indexes
+#
+#  index_posts_on_author_id    (author_id)
+#  index_posts_on_category_id  (category_id)
+#
