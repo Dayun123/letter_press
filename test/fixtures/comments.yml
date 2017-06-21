@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  commenter: MyString
+  content: MyText
+  post: one
+
+two:
+  commenter: MyString
+  content: MyText
+  post: two
+
+# == Schema Information
+#
+# Table name: comments
+#
+#  id         :integer          not null, primary key
+#  commenter  :string
+#  content    :text
+#  post_id    :integer
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
+# Indexes
+#
+#  index_comments_on_post_id  (post_id)
+#
